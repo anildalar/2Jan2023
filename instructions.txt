@@ -1,0 +1,29 @@
+Functions ?
+
+Functions are resusable block of code
+
+
+Syntax
+1995-2023
+function <functionName>(){
+
+}
+
+2015 ES6 (EcmaScript 2015)
+
+Fat Arrow => Notation of declaring function
+
+Arrow Function
+
+
+String interpolation/Variable substitution
+
+ `   ${variableName}  `
+
+
+Where can be functions exits.
+
+
+1. Standalone
+2. JS Object 2nd member
+3. Inside a Class

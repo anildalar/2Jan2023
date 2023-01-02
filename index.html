@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Arrow Functions</title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+
+
+        <script src="./js/scripts.js"></script>
+        <script>
+            //Standalone
+            // Lets define a function with old way
+
+            //1. Function defination
+            function myFunction1(x){ // x is formal arguemnt
+                alert("Hello"+x+"from myfunction1");
+            }
+
+            //2. Function invocation/Calling
+            myFunction1('Anil'); //Actual Argument 
+
+
+            // Lets define a function with new way (ES6) 2015
+
+            let myFunction2 = (y)=>{ //y is a formal argument
+                alert(`Hello ${y} from myfunction2`);
+            }
+
+            myFunction2("Pushpendra"); // Actual argument
+        </script>
+
+        <script>
+            //2. JS object
+
+            let student1 = {
+                //1. P:V
+                name:"Vishnu",
+                surname:"Jat",
+
+
+                //2. Methods
+                // 2.1 Methods defination
+                displayFullName(){//camleCase
+                    alert(`Hello ${this.name} ${this.surname},How are you ?`);
+                },
+
+                display(name="Payal"){ //Formal Arugment with default value
+                    alert(`Hello ${name}, Good Morning`);
+                },
+
+                display2: (name2)=>{
+                    alert(`Hello ${name2}, Good Morning`);
+                }
+
+            }; //JS Object
+
+            //object.method();
+            student1.displayFullName();
+            student1.display2('SuryabhanSingh'); //Actual Argument
+
+        </script>
+        <script>
+            //PascalCase
+            
+
+            class MyClass{ // PascalCase
+                //1.Properties/Variables
+                student2name="Rahul";//Define and initialization
+                student2surname;
+
+                //2.Constructor
+                constructor(sname){
+                    this.student2surname = sname;
+                }
+
+                //3.Methods
+                // method defination
+                myFunction3(){
+                    alert(`Hello ${this.student2name} ${this.student2surname}, How are you`);
+                }
+
+                myFunction4=()=>{ //Fat Arrow notation
+                    alert(`Hello ${this.student2name} ${this.student2surname}, How are you`);
+                }
+            }
+
+            // let object = new ClassName();
+            // object.method();
+            let object2 = new MyClass("Sharma");
+            object2.myFunction4();
+
+        </script>
+    </body>
+</html>
